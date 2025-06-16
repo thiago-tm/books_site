@@ -1,3 +1,8 @@
+body{ /*linkar com styles depois*/
+    font-family: "Poppins"; 
+    font-size: 16px;
+}
+
 .cabecalho__menu__hamburguer{
     width: 24px;
     height: 24px;
@@ -10,7 +15,7 @@
 }
 
 .cabecalho{
-    background-color: #EBECEE;
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +35,7 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 
 .container__botao:checked~.lista__menu {
@@ -38,10 +44,25 @@
 
 .lista__menu__titulo, .lista__menu__item{
     padding: 1rem;
-    background-color:#FFFFFF;
+    background-color:var( --cor-secundaria);
     
 }
 
 .lista__menu__titulo{
-   background-color: #EB9B00;
+   background-color: var(--titulo);
+   font-family: var(--fonte-principal);
+   font-weight: 700;
+}
+
+.lista__menu__link{
+    font-family: var(--fonte-principal);
+    background: var(--azul-degrade);
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container__botao{
+    display: none;
 }
