@@ -6,11 +6,13 @@
 }
 
 .banner__titulo{
+    font-family: var(--fonte-principal);
     font-size: 18px;
     font-weight: 700;
 }
 
 .banner__texto{
+    font-family: var(--fonte-principal);
     font-weight: 500;
     margin: 1rem 0;
 }
@@ -29,7 +31,7 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    color: var(--fonte-principal);
+    color: var(--cor-secundaria);
     background: url("../assets/Pesquisa.svg") no-repeat ;
-
 }
+

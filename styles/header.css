@@ -44,7 +44,7 @@ body{ /*linkar com styles depois*/
 
 .lista__menu__titulo, .lista__menu__item{
     padding: 1rem;
-    background-color:var( --cor-secundaria);
+    background-color:var(--cor-secundaria);
     
 }
 
