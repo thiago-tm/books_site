@@ -24,6 +24,7 @@
 .card__descricao{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 .card__botoes{
@@ -44,5 +45,25 @@
 }
 
 .descricao__titulo{
-    
+    color: var(--titulo);
+    font-weight: 700;
+}
+
+.descricao__titulo__livro{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.descricao__texto{
+    font-size: 14px;
+}
+
+.botoes__ancora{
+    background-color: var(--titulo);
+    padding: 1rem 2.2rem;
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    text-decoration: none;
 }
