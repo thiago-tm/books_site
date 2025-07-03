@@ -5,6 +5,8 @@
     font-size: 16px;
     font-weight: 700;
     padding: 1rem 0 0.5rem 0;
+    margin: 0.5rem 0;
+    
 }
 
 .swiper-slide img{
@@ -66,4 +68,22 @@
     color: var(--cor-secundaria);
     font-weight: 700;
     text-decoration: none;
+}
+
+.descricao__imagem__thiago{
+    height: 50%;
+    width: 50%;
+    
+
+}
+
+.card__estrela{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.topicos{
+    background: var(--azul-degrade);
+    color: var(--cor-secundaria);
 }
