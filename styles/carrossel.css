@@ -82,8 +82,3 @@
     gap: 2px;
     align-items: center;
 }
-
-.topicos{
-    background: var(--azul-degrade);
-    color: var(--cor-secundaria);
-}
