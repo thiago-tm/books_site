@@ -71,8 +71,7 @@
 }
 
 .descricao__imagem__thiago{
-    height: 50%;
-    width: 50%;
+    width: 10rem;
     
 
 }
@@ -81,4 +80,29 @@
     display: flex;
     gap: 2px;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px){
+
+    .carrossel__titulo{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2rem;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        margin-top: 20%;
+    }
+
+    .card{
+        width: 50%;
+        margin: 2rem auto;    
+    }
 }

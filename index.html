@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -46,9 +47,40 @@
             </ul>
 
             <img src="assets/Logo.svg" alt="Logo da aluraBooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+            <li class="opcoes__item">Categorias</li>
+            </label>
+             <ul class="lista__menu">
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">PROGRAMAÇÃO</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">FRONT-END</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">INFRAESTRUTURA</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">BUSINESS</a>
+                </li>
+                <li class="lista__menu__item">
+                    <a href="#" class="lista__menu__link">DESIGN & UX</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__item__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__item__link">Minha Estante</a></li>
+            
+        </ul>
+
+
         <div class="container">
-            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem--transparente"></a>
             <a href="#"><img src="assets/Compras.svg" alt="Carrinho de comprar" class="container__imagem"></a>
             <a href="#"><img src="assets/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
         </div>
@@ -208,9 +240,11 @@
     </Section>
 
     <section class="contato">
+        <div class="contato__descricao">
         <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
         <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
     <hr/>
