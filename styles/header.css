@@ -63,16 +63,7 @@ body{ /*linkar com styles depois*/
     background-clip: text;
 }
 
-.container__botao{
-    display: none;
-}
-
-.container__titulo{
-    display: none;
-  
-}
-
-.opcoes{
+.container__botao, .container__titulo, .opcoes, .container__texto{
     display: none;
 }
 
@@ -84,7 +75,7 @@ body{ /*linkar com styles depois*/
 
     .container__titulo{
         font-weight: 400;
-        display: block;
+        display: block; 
     }
 
     .container__titulo--negrito{
@@ -120,5 +111,26 @@ body{ /*linkar com styles depois*/
 
     .opcoes__botao{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    
+    .cabecalho{
+        padding: 0 2rem;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+    .container__texto{
+        display: block;
     }
 }

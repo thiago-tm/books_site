@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -53,9 +54,9 @@
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
             <label for="opcoes-menu">
-            <li class="opcoes__item">Categorias</li>
+                <li class="opcoes__item">Categorias</li>
             </label>
-             <ul class="lista__menu">
+            <ul class="lista__menu">
                 <li class="lista__menu__item">
                     <a href="#" class="lista__menu__link">PROGRAMAÇÃO</a>
                 </li>
@@ -75,14 +76,21 @@
 
             <li class="opcoes__item"><a href="#" class="opcoes__item__link">Favoritos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__item__link">Minha Estante</a></li>
-            
+
         </ul>
 
 
         <div class="container">
-            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem--transparente"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="Carrinho de comprar" class="container__imagem"></a>
-            <a href="#"><img src="assets/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem--transparente"></a>
+            <a href="#" class="container__link">
+                <img src="assets/Compras.svg" alt="Carrinho de comprar" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
     </header>
 
@@ -96,117 +104,122 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Book guia Front-end"></div>
-                <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Book guia Javascript"></div>
-                <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Book guia Acessibilidade"></div>
-                <div class="swiper-slide"><img src="assets/Nodejs.svg" alt="Book guia Nodejs"></div>
-                <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Book guia ReactNative"></div>
-                <div class="swiper-slide"><img src="assets/Gestão.svg" alt="Book guia Gestão"></div>
-                <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Book guia Liderança"></div>
-                <div class="swiper-slide"><img src="assets/Tuning (1).svg" alt="Book guia Tuning"></div>
-                <div class="swiper-slide"><img src="assets/UX.svg" alt="Book guia UX"></div>
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Book guia Front-end"></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Book guia Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Book guia Acessibilidade"></div>
+                    <div class="swiper-slide"><img src="assets/Nodejs.svg" alt="Book guia Nodejs"></div>
+                    <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Book guia ReactNative"></div>
+                    <div class="swiper-slide"><img src="assets/Gestão.svg" alt="Book guia Gestão"></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Book guia Liderança"></div>
+                    <div class="swiper-slide"><img src="assets/Tuning (1).svg" alt="Book guia Tuning"></div>
+                    <div class="swiper-slide"><img src="assets/UX.svg" alt="Book guia UX"></div>
 
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-        </div>
-
-        <div class="card">
-            <!-- 1° Linha -->
-            <div class="card__descricao">
-                <!-- 1° coluna -->
-                <div class="descricao">
-                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="descricao__titulo__livro">Angular 11 e Firebase</h2>
-                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 </div>
-                <!-- 2° coluna -->
-                <img src="assets/Angular.svg" class="descricao__imagem" alt="Imagem ilustrativa do Angular">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
 
-            <!-- 1° linha -->
-            <div class="card__botoes">
-                <!-- 1° coluna -->
-                <ul class="botoes">
-                    <li class="botoes__itens"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__itens"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                    <li class="botoes__itens"></li>
-                </ul>
-                <!-- 2° coluna -->
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
+            <div class="card">
+                <!-- 1° Linha -->
+                <div class="card__descricao">
+                    <!-- 1° coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo__livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!-- 2° coluna -->
+                    <img src="assets/Angular.svg" class="descricao__imagem" alt="Imagem ilustrativa do Angular">
+                </div>
 
+                <!-- 1° linha -->
+                <div class="card__botoes">
+                    <!-- 1° coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__itens"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__itens"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compras">
+                        </li>
+                        <li class="botoes__itens"></li>
+                    </ul>
+                    <!-- 2° coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+
+            </div>
         </div>
 
-        
         <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Book guia Front-end"></div>
-                <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Book guia Javascript"></div>
-                <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Book guia Acessibilidade"></div>
-                <div class="swiper-slide"><img src="assets/Nodejs.svg" alt="Book guia Nodejs"></div>
-                <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Book guia ReactNative"></div>
-                <div class="swiper-slide"><img src="assets/UX.svg" alt="Book guia UX"></div>
+        <div class="carrossel__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Book guia Front-end"></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Book guia Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Book guia Acessibilidade"></div>
+                    <div class="swiper-slide"><img src="assets/Nodejs.svg" alt="Book guia Nodejs"></div>
+                    <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Book guia ReactNative"></div>
+                    <div class="swiper-slide"><img src="assets/UX.svg" alt="Book guia UX"></div>
 
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-        </div>
-
-        <div class="card">
-            <!-- 1° Linha -->
-            <div class="card__estrela">
-            <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
-            <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
-            <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
-            <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
-            <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
-            </div>
-            <!-- 2° Linha -->
-            <div class="card__descricao">
-                <!-- 1° coluna -->
-                <div class="descricao">
-                    <h3 class="descricao__titulo">Autor do Mês</h3>
-                    <h2 class="descricao__titulo__livro">Thiago Tinfre Marcelino</h2>
-                    <p class="descricao__texto">Thiago Tinfre, desenvolvedor e especialista em Front-End. Com o foco em Javascript, Next.js e React.</p>
                 </div>
-                <!-- 2° coluna -->
-                <img src="assets/fotoThiago.jpeg" class="descricao__imagem__thiago" alt="Imagem do programador Thiago Tinfre Marcelino">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
 
-            <!-- 1° linha -->
-            <div class="card__botoes">
-                <!-- 1° coluna -->
-                <ul class="botoes">
-                    <li class="botoes__itens"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__itens"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compras"></li>
-                    <li class="botoes__itens"></li>
-                </ul>
-                <!-- 2° coluna -->
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
+            <div class="card">
+                <!-- 1° Linha -->
+                <div class="card__estrela">
+                    <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
+                    <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
+                    <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
+                    <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
+                    <div class="card__descricao__estrelas"><img src="assets/Star 3.svg"></div>
+                </div>
+                <!-- 2° Linha -->
+                <div class="card__descricao">
+                    <!-- 1° coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Autor do Mês</h3>
+                        <h2 class="descricao__titulo__livro">Thiago Tinfre Marcelino</h2>
+                        <p class="descricao__texto">Thiago Tinfre, desenvolvedor e especialista em Front-End. Com o foco
+                            em Javascript, Next.js e React.</p>
+                    </div>
+                    <!-- 2° coluna -->
+                    <img src="assets/fotoThiago.jpeg" class="descricao__imagem__thiago"
+                        alt="Imagem do programador Thiago Tinfre Marcelino">
+                </div>
 
+                <!-- 1° linha -->
+                <div class="card__botoes">
+                    <!-- 1° coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__itens"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__itens"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compras">
+                        </li>
+                        <li class="botoes__itens"></li>
+                    </ul>
+                    <!-- 2° coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
         </div>
 
-         
     </section>
 
     <Section class="topicos">
@@ -241,13 +254,13 @@
 
     <section class="contato">
         <div class="contato__descricao">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-    </div>
-    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
-    <hr/>
+    <hr />
 
     <footer class="rodape">
         <h2 class="rodape__titulo">GRUPO ALURA</h2>
@@ -296,7 +309,7 @@
                 <a href="#" class="rodape__lista__link">PM3</a>
             </li>
         </ul>
-       
+
         <ul class="rodape__lista">
             <li class="rodape__lista__titulo">Comunidade</li>
             <li class="rodape__lista__item">

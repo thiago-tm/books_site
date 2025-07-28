@@ -4,9 +4,8 @@
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    padding: 1rem 0 0.5rem 0;
-    margin: 0.5rem 0;
-    
+    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .swiper-slide img{
@@ -20,7 +19,6 @@
 
 .swiper-pagination{
     position: initial;
-    margin: 0.5rem 0;
 }
 
 .card__descricao{
@@ -87,20 +85,50 @@
     }
 
     .swiper-pagination{
-        margin: 2rem;
+        margin: 1rem;
     }
 
     .swiper{
         width: 60%;
     }
 
-    .swiper-button-prev, .swiper-button-next{
-        display: block;
-        margin-top: 20%;
-    }
 
     .card{
         width: 50%;
         margin: 2rem auto;    
+    }
+}
+
+@media screen and (min-width: 1728px){
+    
+    .carrossel__container{
+        display: flex;
+        margin: 5rem;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+        margin: 0;
+    }
+
+     .swiper{
+        width: 40%;
+    }
+
+    .card{
+        width: 40%;
+        margin-left: 3rem;    
+    }
+
+    .descricao{
+        margin-right: 2rem;
+    }
+
+    .descricao__titulo{
+        font-size: 32px;
+    }
+
+    .descricao__texto{
+        font-size: 16px;
     }
 }
