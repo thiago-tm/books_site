@@ -124,6 +124,10 @@
         margin-right: 2rem;
     }
 
+    .botoes__ancora:hover{
+        background: var(--azul-degrade);
+    }
+
     .descricao__titulo{
         font-size: 32px;
     }

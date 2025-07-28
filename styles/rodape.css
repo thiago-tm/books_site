@@ -55,4 +55,8 @@ hr{
     .rodape{
         padding: 2rem 0;
     }
+
+    .rodape__lista__link:hover{
+        text-decoration: underline;
+    }
 }
